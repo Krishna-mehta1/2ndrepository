@@ -2,11 +2,13 @@
 
 int main()
 {
-    int a, sum;
-    scanf("%d", &a);
-    for (int i = 1; i <= a; i++)
-    {
-        printf("%d ", i);
-    }
+    int x, y, temp;
+    printf("Enter the value of x and y: ");
+    scanf("%d %d", &x, &y);
+    printf("Before swapping x=%d, y=%d ", x, y);
+    temp = x;
+    x = y;
+    y = temp;
+    printf("After swapping x=%d, b=%d", x, y);
     return 0;
 }
